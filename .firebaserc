@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bumpie-app"
+  },
+  "targets": {
+    "bumpie-app": {
+      "hosting": {
+        "Admin-panel": [
+          "bumpie-app"
+        ]
+      }
+    }
+  }
+}

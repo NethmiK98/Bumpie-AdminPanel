@@ -1,0 +1,35 @@
+.sidenav {
+  width: 280px;
+  position: fixed;
+  background-color: #ffffff !important;
+  height: 100vw;
+}
+
+.logo{
+  text-align: center;
+}
+
+.bumpielogo {
+  margin-top: 38px;
+  margin-bottom: 14px;
+}
+
+.navitems {
+  text-decoration: none;
+
+}
+
+.navitem {
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navitem:hover {
+  background-color: #EADEDE;
+}
+
+.navitem:active {
+  background-color: #EADEDE;
+}

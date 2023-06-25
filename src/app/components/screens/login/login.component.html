@@ -1,0 +1,25 @@
+<div class="row login">
+  <div class="col-md">
+    <img class="left-image d-none d-md-block" src="/assets/login-card.png" alt="">
+  </div>
+  <div class="col-md">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="container">
+        <img class="logo" src="/assets/Bumpie.png" height="80" alt="" />
+        <h3 class="heading">Hi, Welcome back!</h3>
+        <p class="sub-heading">Sign in to continue...</p>
+        <div class="form">
+          <div class="form-group">
+            <label for="username" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="user.email">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="user.password">
+            <button class="btn btn-primary btn-block login-btn" (click)="loginUser()">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

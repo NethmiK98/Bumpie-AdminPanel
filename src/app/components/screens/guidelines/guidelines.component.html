@@ -1,0 +1,38 @@
+<app-dashboard></app-dashboard>
+<div class="form guidelines">
+    <div class="row">
+        <div class="col-4">
+            <h4>Nutritions</h4>
+            <ul class="list-group">
+                <li class="list-group-item card border guide-card" *ngFor="let post of nutritions$ | async">
+                    <img class="img-responsive" src="{{ post.image }}">
+                    <h6 class="title">{{post.title}}</h6>
+                    <p class="subtitle">{{post.subtitle}}</p>
+                    <p class="desc">{{post.description}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h4>Meditation</h4>
+            <ul class="list-group">
+                <li class="list-group-item card border guide-card" *ngFor="let post of meditation$ | async">
+                    <img class="img-responsive" src="{{ post.image }}">
+                    <h6 class="title">{{post.title}}</h6>
+                    <p class="subtitle">{{post.subtitle}}</p>
+                    <p class="desc">{{post.description}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h4>Breastfeeding</h4>
+            <ul class="list-group">
+                <li class="list-group-item card border guide-card" *ngFor="let post of breastfeeding$ | async">
+                    <img class="img-responsive" src="{{ post.image }}">
+                    <h6 class="title">{{post.title}}</h6>
+                    <p class="subtitle">{{post.subtitle}}</p>
+                    <p class="desc">{{post.description}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

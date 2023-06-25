@@ -1,0 +1,47 @@
+<app-dashboard></app-dashboard>
+<div class="form">
+  <h4 style="padding-bottom: 12px;">Create new article</h4>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Category</label>
+    <div class="col-sm-10">
+      <select class="form-select" id="autoSizingSelect" [(ngModel)]="article.category">
+        <option value="nutritions">Nutrition</option>
+        <option value="meditation">Meditation</option>
+        <option value="breastfeeding">Breastfeeding</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Title</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="Enter the title" required
+        [(ngModel)]="article.title">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Subtitle</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="Enter the subtitle" required
+        [(ngModel)]="article.subtitle">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Description</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter the description" rows="3"
+        required [(ngModel)]="article.description"></textarea>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="colformFile" class="col-sm-2 col-form-label">Upload an Image</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="file" id="formFile" [(ngModel)]="selectedImage"
+        (change)="addImage($any($event).target.files)">
+    </div>
+  </div>
+
+  <div>
+    <button class="btn btn-success" type="button" (click)="addArticle()">Upload Article</button>
+  </div>
+</div>

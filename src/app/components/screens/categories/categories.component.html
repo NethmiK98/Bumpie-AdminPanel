@@ -1,0 +1,12 @@
+<app-dashboard></app-dashboard>
+
+<div class= "form">
+  <section>
+    <h1>Posts</h1>
+    <ul>
+        <li *ngFor="let post of categories$ | async">
+            {{post.title}}
+        </li>
+    </ul>
+</section>
+</div>

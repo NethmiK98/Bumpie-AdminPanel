@@ -1,0 +1,22 @@
+<app-dashboard></app-dashboard>
+<div class="form growth-cycle">
+    <div class="row">
+        <label for="colFormLabel" class="col-2 col-form-label">Select Week :</label>
+        <div class="col-3">
+            <select class="form-select" id="autoSizingSelect" [(ngModel)]="selectedWeek" (change)='getWeekArticles($event)'>
+                <option [value]="week.id" *ngFor="let week of weeks" >{{ week.data().week }}</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" type="button" routerLink="/add-growthcycle">Add New Article</button>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item card border growth-card" *ngFor="let post of weekArticles$ | async">
+            <img class="img-responsive" src="{{ post.image }}">
+            <h6 class="title">{{post.title}}</h6>
+            <p class="subtitle">{{post.subtitle}}</p>
+            <p class="desc">{{post.description}}</p>
+        </li>
+    </ul>
+</div>

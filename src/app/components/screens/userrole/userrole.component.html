@@ -1,0 +1,12 @@
+<app-dashboard></app-dashboard>
+
+<div class="form">
+    <section>
+        <h1>User Roles</h1>
+        <ul>
+            <li *ngFor="let admin of admins$ | async">
+                {{admin.name}} {{admin.email}} {{admin.role}} 
+            </li>
+        </ul>
+    </section>
+</div>
