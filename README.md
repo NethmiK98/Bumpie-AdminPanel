@@ -1,5 +1,7 @@
 # AdminPanel
 
+This is the GitHub repository for an Admin Dashboard of the Bumpie Pregnancy Tracking Mobile Application.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
 ## Development server
